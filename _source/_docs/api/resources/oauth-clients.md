@@ -123,8 +123,8 @@ Property Details
     |-------------------+---------------------------------------------------------------+-----------------------------------------------------------------------------------|
     | Application Type  | Valid Grant Type                                              | Requirements                                                                      |
     | ----------------- | ------------------------------------------------------------- | --------------------------------------------------------------------------------- |
-    | `web`             | `authorization_code`, implicit`, `refresh_token`              | Must have at least `authorization_code`                                           |
-    | `native`          | `authorization_code`, `implicit`, `password`, `refresh_token` | Must have either `authorization_code` or both `implicit` and `password`           |
+    | `web`             | `authorization_code`, `implicit`, `refresh_token`             | Must have at least `authorization_code`                                           |
+    | `native`          | `authorization_code`, `implicit`, `password`, `refresh_token` | Must have at least `authorization_code`                                           |
     | `browser`         | `implicit`                                                    |                                                                                   |
     | `service`         | `client_credentials`                                          | Works with OAuth 2.0 flow (not OpenID Connect)                                    |
 
@@ -149,8 +149,8 @@ Adds a new client application to your organization.
 ##### Request Parameters
 {:.api .api-request .api-request-params}
 
-Parameter | Description                               | ParamType | DataType                               | Required | Default
---------- | ----------------------------------------- | --------- | -------------------------------------- | -------- | ---
+Parameter | Description                               | ParamType | DataType                               | Required |
+--------- | ----------------------------------------- | --------- | -------------------------------------- | -------- |
 settings  | OAuth client registration settings        | Body      | [Client Settings](#oauth-client-model) | TRUE     |
 
 ##### Response Parameters
@@ -251,8 +251,8 @@ Fetches a specific client by `clientId` from your organization
 ##### Request Parameters
 {:.api .api-request .api-request-params}
 
-Parameter | Description                     | ParamType | DataType | Required | Default
---------- | ------------------------------- | --------- | -------- | -------- | -------
+Parameter | Description                     | ParamType | DataType | Required |
+--------- | ------------------------------- | --------- | -------- | -------- |
 clientId  | `clientId` of a specific client | URL       | String   | TRUE     |
 
 ##### Response Parameters
